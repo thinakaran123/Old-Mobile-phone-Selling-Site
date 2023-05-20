@@ -1,0 +1,35 @@
+#fdiv{
+    background-color: aliceblue;
+padding-top: 5%;
+    padding-left: 30%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 150%;
+
+}
+input:not([type="radio"]) {
+width:50%;
+}
+#btn{
+margin-left: 20%;    
+}
+#popup span{
+    position: absolute;
+    right: 10%;
+    top: 4%;
+    font-size: larger;
+}
+#popup{
+    display: none;
+    position: fixed;
+    top:50%;
+    left: 40%;
+    padding: 2%;
+    border-radius: 10%;
+    background-color: white;
+    width: 20%;
+    text-align: center;
+}
+span:hover{
+    background-color: black;
+    color: white;
+}

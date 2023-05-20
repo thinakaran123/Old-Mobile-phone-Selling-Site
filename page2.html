@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sellify</title>
+    <link rel="icon" type="image/x-icon" href="phn.ico">
+    <link rel="stylesheet" href="page2.css">
+
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<script>
+function done(){
+var checkRadio1 = document.querySelector('input[name="radio-1"]:checked');
+var checkRadio2 = document.querySelector('input[name="radio-2"]:checked');
+var checkRadio3 = document.querySelector('input[name="radio-3"]:checked');
+var checkRadio4 = document.querySelector('input[name="radio-4"]:checked');
+var checkRadio5 = document.querySelector('input[name="radio-5"]:checked');
+             
+            if(checkRadio1 != null && checkRadio2 != null && checkRadio3 != null && checkRadio4 != null && checkRadio5 != null) {
+document.getElementById("btn").style.display="block";
+document.getElementById("donebtn").style.display="none";
+            }
+            else {
+alert("Please select required")
+}
+}
+
+
+</script>
+
+<body>
+    <img src="src/phone.gif" id="phoneimg" height="500px" alt="">
+
+    <div id="rb">
+        <form action="" id="rbform">
+        <p>1. Are you able to make and receive calls?</p>
+        <label for="m/rcalls1">Yes</label>
+        <input type="radio" name="radio-1" id="m/rcalls1">
+        <label for="m/rcalls2">No</label>
+        <input type="radio" name="radio-1" id="m/rcalls2">
+
+        <p>2. Is your device's touch screen working properly?</p>
+        <label for="ds1">Yes</label>
+        <input type="radio" name="radio-2" id="ds1">
+        <label for="ds2">No</label>
+        <input type="radio" name="radio-2" id="ds2">
+
+        <p>3. Is your phone's screen original?</p>
+        <label for="pso">Yes</label>
+        <input type="radio" name="radio-3" id="pso">
+        <label for="pso2">No</label>
+        <input type="radio" name="radio-3" id="pso2">
+
+        <p>4. Is your device under brand warranty?</p>
+        <label for="dub">Yes</label>
+        <input type="radio" name="radio-4" id="dub1">
+        <label for="dub2">No</label>
+        <input type="radio" name="radio-4" id="dub2">
+            
+        <p>5. Do you have valid bill with same IMEI?</p>
+        <label for="imei">Yes</label>
+        <input type="radio" name="radio-5" id="imei">
+        <label for="imei">No</label>
+        <input type="radio" name="radio-5" id="imei">
+        
+        </form>
+    </div>
+    <div id="lastdiv">
+    <label for="up">Upload Photos: </label>
+        <input type="file" value="Upload Photos" name="up" id="up">
+    </div>
+    <button id="donebtn" class="btn btn-primary" onclick="done()">Submit!!!</button>
+    <a href="ad.html"><button class="btn btn-info" id="btn">Next!!!</button></a>
+</body>
+</html>

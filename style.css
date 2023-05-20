@@ -1,0 +1,211 @@
+/* #A4BC92
+#B3C99C
+#C7E9B0
+#DDFFBB */
+#nav1{
+    background-color:#2874f0;
+}
+.navbar-nav .nav-item .nav-link,.navbar-brand{
+    color: white;
+    font-size: 150%;
+}
+#nav2{
+    height:50px;
+    background-color:#2874f0;
+ 
+}
+#nav2 .nav-item .nav-link{
+
+    color: black;
+    font-size: 150%;
+}
+.dropdown button{
+    color: white;
+
+}
+.dropdown button:hover{
+    color: white;
+   text-decoration: underline;
+
+}
+.dropdown-menu li a{
+    color: black;
+    text-decoration: none;
+    font-size: 120%;
+    display: grid;
+    text-align: center;
+}
+.list-navbar li a:hover{
+    color: white;
+ background-color: #2874f0;
+}
+
+/* dropdown in 2 nav */
+.dropdown{
+    padding-top: 0;
+    padding-left: 10%;
+}
+#Location-dd{
+margin-left: 8%;
+}
+
+.dropdown-menu li  a:hover{
+background-color: black;
+color: white;
+}
+/* banner */
+.banner{
+    background-color: #087ac0;
+    width: 100%;
+    height: 600px;
+}
+#lefthandbanner{
+    position: relative;
+    left: 0;
+
+}
+#righthandbanner{
+    position: absolute;
+    top: 125px;
+    right: 0;
+}
+#bannertxt{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    text-align: center;
+    font-size: 350%;
+    font-family: cursive;
+    font-weight: 900;
+    color: white;
+}
+
+/* 2nd page */
+#spage{
+    padding: 7%;
+    background-color: #eeeeee;
+}
+#spage-content1{
+    text-align: center;
+}
+#spage-c1-subcontent1{
+    font-size: 150%;
+    font-weight: 500;
+}
+#spage-c1-subcontent2{
+    font-size: 120%;
+    font-weight: 400;
+   }
+
+#spage-c2-subcontent1,#spage-c3-subcontent1,#spage-c4-subcontent1{
+    font-size: 150%;
+    text-align: center;
+    font-weight: 500;
+}
+#spage-c2-subcontent2,#spage-c3-subcontent2,#spage-c4-subcontent2{
+    font-size: 120%;
+    text-align: center;
+    font-weight: 400;
+
+}
+#spage2{
+    margin-top: 4%;
+}
+/* end */
+
+/* 3page */
+/* boxes */
+#page3{
+    padding: 10%;
+background-color: white;
+}
+#box-1,#box-2,#box-3,#box-4{
+padding: 1px;
+margin: 3px;
+width: 20%;
+background-color: aliceblue;
+text-align: center;
+    border: 1px white solid;
+}
+#box-c1{
+    font-weight: 500;
+font-size: 150%;
+}
+#box-c2{
+    font-weight: 400;
+font-size: 120%;
+}
+#txt-after-boxes{
+    font-size: 200%;
+    font-weight: 400;
+}
+
+#rside-3page{
+    position: absolute;
+    top: 190%;
+    left: 50%;
+}
+
+/* last-div */
+#last-div{
+    font-size: 100%;
+width: 90%;
+padding-left: 10%;
+}
+
+#last-logo{
+    margin-top: 4%;
+    text-align: center;
+}
+#last-logo a {
+    padding-left: 1%;
+}
+
+/* media query */
+@media screen and (max-width:480px){
+   #nav2{
+    height: 115px;
+   } 
+   #lefthandbanner,#righthandbanner{
+    display: none;
+   }
+   .banner{
+    height:470px;
+   }
+   #bannertxt{
+    position: absolute;
+    top:40%;
+    left: 7%;
+    font-size: 250%;
+   }
+   .navitem-location{
+position: absolute;
+top:0%;
+left:0%;    
+}
+#box-1,#box-2,#box-3,#box-4{
+    padding: 1px;
+    margin: 3px;
+    width: 45%;
+    background-color: aliceblue;
+    text-align: center;
+        border: 1px white solid;
+    }
+    #rside-3page{
+        position: absolute;
+        top: 320%;
+        left: 10%;
+    }
+    #txt-after-boxes{
+        font-size:150%;
+    }
+    #last-div{
+     margin-top: 100%;
+        font-size: 100%;
+    width: 90%;
+    padding-left: 10%;
+    }
+    #last-logo img{
+        width:40%;
+    }
+}
